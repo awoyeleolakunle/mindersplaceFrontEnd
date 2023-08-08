@@ -108,6 +108,7 @@
 
 
 const bookingHistoryInfoObject = JSON.parse(localStorage.getItem('bookingHistory'));
+document.getElementById('emailId').innerHTML = localStorage.getItem('emailAddress');
 
 if (bookingHistoryInfoObject) {
   console.log(bookingHistoryInfoObject);
