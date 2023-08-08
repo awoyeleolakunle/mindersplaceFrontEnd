@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Booking Description</title>
+</head>
+<body>
+
+<!--Loading Container Start-->
+<div id="load" class="loading-overlay display-flex flex-column justify-content-center align-items-center">
+    <div class="primary-color font-28 fas fa-spinner fa-spin"></div>
+</div>
+<!--Loading Container End-->
+
+<div class="row h-100">
+    <div class="col-xs-12 col-sm-12 remaining-height">
+
+        <!--Page Title & Icons Start-->
+        <div class="header-icons-container text-center">
+            <a href="booking.html">
+                <span class="float-left">
+                    <img src="../icons/back.svg" alt="Back Icon">
+                </span>
+            </a>
+            <span class="title">Booking Description</span>
+            <a href="#">
+                <span class="float-right menu-open closed">
+                    <img src="../icons/menu.svg" alt="Menu Hamburger Icon">
+                </span>
+            </a>
+        </div>
+        <!--Page Title & Icons End-->
+
+        <div class="rest-container">
+            <div class="all-history-items remaining-height">
+                <div class="history-items-container trip-history">
+                    <div class="history-item">
+					
+                        <div><span class="label-title">Status:</span> <span class="font-13">GD345</span></div>
+                        <!--Google Map Start-->
+                        <div id="map1"></div>
+                        <!--Google Map End-->
+
+                        <!--Date & Time Container Start-->
+                        <div class="border-bottom-primary thin">
+                            <div class="status-container">
+                                <div class="date float-left">
+                                    <img src="../icons/calendar-dark.svg" alt="Calendar Icon" class="calendar-icon"> 29 April
+                                </div>
+
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <!--Date & Time Container End-->
+
+                        <!--Address Container Start-->
+                        <div class="addresses-container position-relative">
+                            <div class="height-auto">
+                                <div class="w-100 map-input-container map-input-container-top">
+                                    <span class="fas fa-location-arrow location-icon-rotate map-input-icon"></span>
+                                    <div class="map-input display-flex">
+                                        <input class="controls flex-1 font-weight-light" type="text"
+                                               placeholder="Enter an origin location" value="08:12 - " disabled>
+                                    </div>
+                                </div>
+                                <a href="booking-description.html" class="href-decoration-none">
+                                    <div class="w-100 map-input-container map-input-container-bottom">
+                                        <span class="map-input-icon"><img src="../icons/circle.svg"  alt="Current Location Icon"></span>
+                                        <div class="map-input display-flex border-0 controls flex-1 font-weight-light align-items-center">
+                                            16:12
+                                        </div>
+                                        <span class="dotted-line"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+						
+					
+                        <!--Address Container End-->
+
+                        <!--Trip Costs Container Start-->
+                        <div class="border-bottom-primary thin width-48 border-bottom-light-grey">
+                            <div class="text-uppercase trip-fare">Total Fare</div>
+                        </div>
+
+                        <div class="trip-fare-container font-weight-light">
+                            <div class="trip-fare-item">
+                                <span class="float-left">Total Paid Amount</span>
+                                <span class="float-right blue-price">£14.30</span>
+                                <span class="clearfix"></span>
+                            </div>
+                        </div>
+                        <!--Trip Costs Container End-->
+
+						<div class="online-support">
+                            <a href="online-support.html" class="btn btn-dark text-uppercase">Cancel</a>
+                        </div>
+						
+                        <!--Driver Information Container Start-->
+                        <div class="driver-information">
+                            <div class="driver-profile">
+                                <div class="float-left">
+                                    <img class="img-responsive" src="https://via.placeholder.com/48" alt="Driver Picture">
+                                </div>
+                                <div class="float-left driver-name">Minder <br/> Minder-surname </div>
+                                <div class="float-right">
+                                    <a href="chat.html" class="btn approved-icon message"><span class="fas fa-comments"></span></a>
+                                    <a class="btn approved-icon call"><span class="fas fa-phone text-white"></span></a>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="driver-car-info">
+                                <div class="driver-car-info-item">
+                                    <div class="info-container float-left">
+                                        <div class="info-container-label">
+                                            Full Address:
+                                        </div>
+                                        <div>
+                                            19 Pius Street, Luton
+                                        </div>
+                                    </div>
+                                    <div class="info-container float-right">
+                                        <div class="info-container-label">
+                                          Mobile Number:
+                                        </div>
+                                        <div class="text-right">
+                                         07723 452125
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="driver-car-info-item">
+                                    <div class="info-container float-left">
+                                        <div class="info-container-label">
+                                      House Color:
+                                        </div>
+                                        <div>
+                                         White
+                                        </div>
+                                    </div>
+                                    <div class="info-container float-right">
+                                        <div class="info-container-label">
+                                          House Type:
+                                        </div>
+                                        <div class="text-right">
+                                            Terrace
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Driver Information Container End-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Main Menu Start-->
+    <div class="main-menu hidden-soft">
+        <div class="mini-profile-info">
+            <div class="menu-close">
+                <span class="float-right">
+                    <img src="../icons/close.svg" alt="Close Icon">
+                </span>
+            </div>
+            <div class="profile-picture text-center">
+                <img src="images/logo-mp.png" alt="Profile Picture">
+            </div>
+            <div class="profile-info">
+                <div class="profile-name text-center">Jonathan McBerly</div>
+                <div class="profile-email text-center">lorem@loremipsum.com</div>
+            </div>
+        </div>
+        <div class="menu-items">
+            <div class="all-menu-items">
+			
+			
+                <a class="menu-item" href="index.html">
+                    <span class="menu-item-icon fas fa-desktop"></span>
+                    <span class="menu-item-title">Active Session</span>
+                    <span class="menu-item-click fas fa-arrow-right"></span>
+                </a>
+					
+                <a class="menu-item" href="my-account.html">
+                    <span class="menu-item-icon fas fa-user"></span>
+                    <span class="menu-item-title">My Account</span>
+                    <span class="menu-item-click fas fa-arrow-right"></span>
+                </a>	
+				
+                <a class="menu-item" href="unit.html">
+                    <span class="menu-item-icon fas fa-home"></span>
+                    <span class="menu-item-title">Unit</span>
+                    <span class="menu-item-click fas fa-arrow-right"></span>
+                </a>				
+				
+                <a class="menu-item" href="support.html">
+                    <span class="menu-item-icon fas fa-envelope"></span>
+                    <span class="menu-item-title">Support & Notifications</span>
+                    <span class="menu-item-click fas fa-arrow-right"></span>
+                </a>
+				
+				
+				
+				
+				
+				
+                <a href="loading-logo.html" class="menu-item margin-top-auto">
+                    <span class="menu-item-icon menu-dark logout">
+                        <img src="../icons/logout.svg" alt="Logout Icon">
+                    </span>
+                    <span class="menu-item-icon menu-light logout">
+                        <img src="../icons/logout-light.svg" alt="Logout Icon">
+                    </span>
+                    <span class="menu-item-title logout">Log out</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Main Menu End-->
+
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="../js/jquery-3.4.1.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/history.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=WRITE_YOUR_API&libraries=places&callback=initMap1"></script>
+</body>
+</html>
