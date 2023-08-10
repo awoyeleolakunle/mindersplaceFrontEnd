@@ -51,8 +51,8 @@
                     </span>
                 </div>
                 <div class="display-flex flex-column">
-                    <span class="profile-name">Nata Vacheishvili</span>
-                    <span class="profile-email font-weight-light">nata_vacheishvili@gurucar.com</span>
+                    <span id="profileNameId" class="profile-name">Nata Vacheishvili</span>
+                    <span id="parentProfileEmailId" class="profile-email font-weight-light">nata_vacheishvili@gurucar.com</span>
                 </div>
             </div>
             <!--Profile Information Container End-->
@@ -67,7 +67,7 @@
                             <div class="input-group-prepend">
                                 <span><img src="../icons/phone.svg" alt="Phone Number"></span>
                             </div>
-                            <input class="form-control" type="tel" name="phone" placeholder="Mobile Phone Number">
+                            <input id="phoneNumberId" class="form-control" value="" type="tel" name="phone" placeholder="Mobile Phone Number">
                         </div>
                     </div>
                     <!--Profile Field Container End-->
@@ -80,7 +80,18 @@
                                     <img src="../icons/avatar-light.svg" alt="Avatar Icon">
                                 </span>
                             </div>
-                            <input class="form-control" type="text" autocomplete="off" name="full-name" placeholder="Full Name">
+                            <input id="firstNameId" class="form-control" value="" type="text" autocomplete="off" name="full-name" placeholder="First Name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span>
+                                    <img src="../icons/avatar-light.svg" alt="Avatar Icon">
+                                </span>
+                            </div>
+                            <input id="lastNameId" class="form-control" value="" type="text" autocomplete="off" name="full-name" placeholder="Last Name">
                         </div>
                     </div>
                     <!--Profile Field Container End-->
@@ -93,7 +104,7 @@
                                     <img src="../icons/envelope.svg" alt="Envelope Icon">
                                 </span>
                             </div>
-                            <input class="form-control" type="email" name="email" placeholder="Email">
+                            <input id="emailId" class="form-control" value="" name="email" placeholder="Email"  contenteditable="false">
                         </div>
                     </div>
                     <!--Profile Field Container End-->
@@ -106,7 +117,7 @@
                                     <img src="../icons/marker.svg"  alt="Marker Icon">
                                 </span>
                             </div>
-                            <input class="form-control" type="text" autocomplete="off" name="country" placeholder="Country">
+                            <input id="countryId" class="form-control" value="" type="text" autocomplete="off" name="country" placeholder="Country">
                         </div>
                     </div>
                     <!--Profile Field Container End-->
@@ -119,7 +130,7 @@
                                     <img src="../icons/marker.svg"  alt="Marker Icon">
                                 </span>
                             </div>
-                            <input class="form-control" type="text" autocomplete="off" name="city" placeholder="City">
+                            <input id="cityId" class="form-control" value="" type="text" autocomplete="off" name="city" placeholder="City">
                         </div>
                     </div>
                     <!--Profile Field Container End-->
@@ -132,7 +143,7 @@
                                     <img src="../icons/marker.svg"  alt="Marker Icon">
                                 </span>
                             </div>
-                            <input class="form-control" type="text" autocomplete="off" name="address" placeholder="Address">
+                            <input id="addressId" class="form-control" value="" type="text" autocomplete="off" name="address" placeholder="Address">
                         </div>
                     </div>
                     <!--Profile Field Container End-->
@@ -145,13 +156,13 @@
                                     <img src="../icons/marker.svg"  alt="Marker Icon">
                                 </span>
                             </div>
-                            <input class="form-control" type="text" autocomplete="off" name="zip" placeholder="Zip Code">
+                            <input id="zipCodeId" class="form-control" value="" type="text" autocomplete="off" name="zip" placeholder="Zip Code">
                         </div>
                     </div>
                     <!--Profile Field Container End-->
 
                     <!--Profile Field Container Start-->
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span>
@@ -165,11 +176,11 @@
                                 </span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!--Profile Field Container End-->
 
                     <!--Profile Field Container Start-->
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span>
@@ -183,11 +194,11 @@
                                 </span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <!--Profile Field Container End-->
 
                     <div class="form-submit-button">
-                        <a href="index.html" class="btn btn-dark text-uppercase ">Save <span class="far fa-save margin-left-10"></span></a>
+                        <a  id="saveId" href="index.html" class="btn btn-dark text-uppercase ">Save <span class="far fa-save margin-left-10"></span></a>
                     </div>
                 </form>
             </div>
@@ -320,5 +331,6 @@
 <script src="../js/popper.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/main.js"></script>
+<script src="integrationFolder/parentProfileIntegration.js"></script>
 </body>
 </html>

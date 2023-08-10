@@ -14,6 +14,36 @@ const jsonData ={
     "password": ""
 }
 
+
+
+const userRole = (jwtToken)=>{
+
+        const [, payloadBase64] = jwtToken.split('.');
+        const payloadJSON = atob(payloadBase64);
+        const payload = JSON.parse(payloadJSON);
+        const userRoles = payload.roles;
+
+        console.log(userRoles[0]);
+
+        if(userRoles[0]=="PARENT"){
+            localStorage.setItem('parentEmailAddress', jsonData.emailAddress)
+            localStorage.setItem('parentToken', jwtToken);
+         window.location.href = "indexBookingOnline.html";
+        }
+        else{
+            alert("Invalid credentials")
+            window.location.href = "sign-in.html"
+        }
+        
+        // if(userRole[0]=="MINDER"){
+        //     localStorage.setItem('minderEmailAddress', emailAddress)
+        //     localStorage.setItem('minderToken', jwtToken);
+        //    // window.location.href = "/CareTaker"
+        // }
+
+  }
+
+
 const loginDetails = ()=>{
     jsonData.emailAddress = emailAddresInput.value;
     jsonData.password = passwordInput.value
@@ -29,18 +59,23 @@ const sendLoginDataToBackend = ()=>{
         headers: {'content-Type' : 'application/json'},
         body: JSON.stringify(jsonData)
     })
-    .then(response=>{
-        if (response.ok){
-            alert("logged in successfully");
-            window.location.href = "indexBookingOnline.html";
-
-        }
-        else{
-            alert("Invalid Credentials")
+    .then(response => {
+        if (response.ok) {
+            return response.json(); 
+        } else {
+            throw new Error("Invalid Credentials");
         }
     })
+
+    .then(data => {
+        const jwtToken = data.data; 
+        alert(jwtToken);
+        userRole(jwtToken);
+    })
+      
     .catch(error =>{
         alert("Error :", error);
+        console.log(error);
 
     })
 }
