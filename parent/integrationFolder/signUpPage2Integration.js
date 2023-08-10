@@ -4,7 +4,7 @@
 
   let jsonData = {
     "userName": localStorage.getItem('username'),
-    "emailAddress": localStorage.getItem('emailAddress'),
+    "emailAddress": localStorage.getItem('parentEmailAddress'),
     "password": localStorage.getItem('password'),
     "firstName": "",
     "lastName": "",
@@ -12,7 +12,7 @@
     "city": "",
     "address": "",
     "phoneNumber": "",
-    "userCategory": localStorage.getItem('userCategory')
+    "userCategory": localStorage.getItem('parentUserCategory')
   };  
 
 
