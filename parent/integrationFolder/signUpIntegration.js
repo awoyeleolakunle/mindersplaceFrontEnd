@@ -32,7 +32,7 @@
         const password = passwordInput.value;
         
         localStorage.setItem("username", username)
-        localStorage.setItem("emailAddress", emailAddress)
+        localStorage.setItem("parentEmailAddress", emailAddress)
         localStorage.setItem("password", password)
 
         console.log("I am the username:", username);
